@@ -1,0 +1,23 @@
+{% extends 'main_app/base.html' %}
+{% block title %}<Барбер Б>{% endblock title %}
+{% load static %}
+
+{% block content %}
+    <div class="bg-img"></div>
+    <div class="index">
+        <div class="flex fd-col">
+            <h1>Категории:</h1>
+            <div class="btns">
+                <div class="flex fd-row">
+                    <a href="{% url 'women' %}"><div id="woman" class="button category">Женские</div></a>  
+                    <a href="{% url 'men' %}"><div id="man" class="button category">Мужские</div></a>
+                    <a href="{% url 'kids' %}"><div id="kid" class="button category">Детские</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+
+
